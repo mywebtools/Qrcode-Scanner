@@ -2,9 +2,12 @@ The core logic of Qrcode Scanner utilizes the jsQR.js library for decoding and r
 
 Below is the core code logic for scanning via file upload and webcam.
 
+live demo: [QRcode Scanner](https://qrcode-scanner.online)
+
 1. Decoding QR Code from a Local Image
 This implementation allows users to upload an image file and decode the QR code content from it.
 
+```javascript
 document.getElementById('fileInput').addEventListener('change', function (event) {
     const file = event.target.files[0];
     if (!file) return;
@@ -33,9 +36,11 @@ document.getElementById('fileInput').addEventListener('change', function (event)
     reader.readAsDataURL(file);
 });
 
+
 2. Decoding QR Code from Webcam Feed
 This implementation continuously reads frames from the webcam and decodes any QR code detected.
 
+```javascript
 const video = document.getElementById('video');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
