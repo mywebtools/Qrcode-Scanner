@@ -4,6 +4,9 @@ Below is the core code logic for scanning via file upload and webcam.
 
 live demo: [QRcode Scanner](https://qrcode-scanner.online)
 
+You can easily batch generate QR codes on [qrcodew.com](https://qrcodew.com) for testing purposes.
+
+
 1. Decoding QR Code from a Local Image
 This implementation allows users to upload an image file and decode the QR code content from it.
 
